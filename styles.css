@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.avatar-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: gray;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: white;
+  transition: 0.4s ease-in-out ;
+  text-align: center;
+  z-index: 5;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.overlay.active{
+    opacity: 1;
+}
